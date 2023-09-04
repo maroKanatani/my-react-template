@@ -1,0 +1,29 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["config:js-app", "docker:disableMajor"],
+  timezone: "Asia/Tokyo",
+  schedule: ["every 4 weeks on Saturday"],
+  labels: ["dependencies"],
+  prHourlyLimit: 2,
+  semanticCommits: "enabled",
+  assigneesFromCodeOwners: true,
+  assigneesSampleSize: 1,
+  rebaseWhen: "never",
+  packageRules: [
+    {
+      // patchはまとめる
+      groupName: "patch updates",
+      matchManagers: ["npm"],
+      matchUpdateTypes: ["patch"],
+    },
+  ],
+  major: {
+    stabilityDays: 7,
+  },
+  minor: {
+    stabilityDays: 3,
+  },
+  patch: {
+    stabilityDays: 2,
+  },
+}
