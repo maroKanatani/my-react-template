@@ -33,6 +33,17 @@ const config = {
       { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
     ],
   },
+  overrides: [
+    {
+      files: [
+        // ディレクトリ直下は設定ファイルが多いので許容する
+        "!src/**",
+      ],
+      rules: {
+        "import/no-default-export": "off",
+      },
+    },
+  ],
 };
 
 module.exports = config;
