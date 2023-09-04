@@ -11,10 +11,12 @@ questions:
 # `{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.tsx`
 
 ```tsx
+import styles from "./{{ inputs.name | pascal }}.module.css";
+
 type Props = {};
 
 export function {{ inputs.name | pascal }}({}: Props) {
-  return <></>;
+  return <div className={styles.module}></div>;
 }
 
 ```
