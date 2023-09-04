@@ -22,8 +22,6 @@ const config = {
     "import/no-default-export": "error",
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "error",
-    "react/prop-types": "off", // tsなのでoffにしておく
-    "react/no-unused-prop-types": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/consistent-type-imports": [
