@@ -1,4 +1,7 @@
-module.exports = {
+/** @typedef {import('eslint').ESLint.ConfigData} ConfigData */
+
+/** @type {ConfigData} */
+const config = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
@@ -16,3 +19,5 @@ module.exports = {
     ],
   },
 }
+
+module.exports = config
