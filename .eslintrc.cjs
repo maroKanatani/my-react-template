@@ -38,6 +38,8 @@ const config = {
       files: [
         // ディレクトリ直下は設定ファイルが多いので許容する
         "!src/**",
+        // Storybookも default export が必要なので許容する
+        "**/*.stories.tsx",
       ],
       rules: {
         "import/no-default-export": "off",
