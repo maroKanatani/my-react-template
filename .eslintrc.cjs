@@ -11,7 +11,7 @@ const config = {
     "plugin:storybook/recommended",
     "prettier",
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs", "!.storybook"],
+  ignorePatterns: ["dist", ".eslintrc.cjs", "!.storybook", "postcss.config.cjs"],
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh", "simple-import-sort", "import"],
   rules: {
