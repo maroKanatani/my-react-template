@@ -41,7 +41,7 @@ export const Primary: Story = {
 
 ```
 
-# `{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.module.css`
+# `{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.module.scss`
 
 ```css
 .module {
