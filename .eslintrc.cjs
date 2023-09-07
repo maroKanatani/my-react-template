@@ -8,9 +8,10 @@ const config = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:storybook/recommended",
     "prettier",
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  ignorePatterns: ["dist", ".eslintrc.cjs", "!.storybook"],
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh", "simple-import-sort", "import"],
   rules: {
@@ -39,7 +40,7 @@ const config = {
         // ディレクトリ直下は設定ファイルが多いので許容する
         "!src/**",
         // Storybookも default export が必要なので許容する
-        "**/*.stories.tsx",
+        "**/*.stories.{tsx,ts}",
       ],
       rules: {
         "import/no-default-export": "off",

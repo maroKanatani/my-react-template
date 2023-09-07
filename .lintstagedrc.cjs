@@ -1,4 +1,4 @@
 module.exports = {
-  "**/*.{js,jsx,ts,tsx}": ["eslint src/ --fix"],
+  "**/*.{ts,tsx}": ["npm run lint:es"],
   "**/*": [`prettier "**/*" --write --ignore-unknown`],
 };
